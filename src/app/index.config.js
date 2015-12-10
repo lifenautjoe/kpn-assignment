@@ -28,7 +28,10 @@
                 url: '/product.html',
                 templateUrl: 'app/product/product.html',
                 controller: 'kpnAssignment.productController',
-                controllerAs: 'product'
+                controllerAs: 'product',
+                data : {
+                    prettyName : 'Product'
+                }
             });
     };
 
