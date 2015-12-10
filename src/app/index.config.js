@@ -1,21 +1,39 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('kpnAssignment')
-    .config(config);
+    /**
+     * The application configuration
+     *
+     * @param $logProvider - Angular $logProvider
+     * @param $urlRouterProvider - Angular $urlRouterProvider
+     * @param $stateProvider - ui.router $stateProvider
+     * @constructor
+     * @ngInject
+     */
+    var Config = function ($logProvider, $urlRouterProvider, $stateProvider) {
 
-  /** @ngInject */
-  function config($logProvider, toastrConfig) {
-    // Enable log
-    $logProvider.debugEnabled(true);
+        /* Log Provider */
 
-    // Set options third-party lib
-    toastrConfig.allowHtml = true;
-    toastrConfig.timeOut = 3000;
-    toastrConfig.positionClass = 'toast-top-right';
-    toastrConfig.preventDuplicates = true;
-    toastrConfig.progressBar = true;
-  }
+        // Enable debug
+        $logProvider.debugEnabled(true);
+
+        /* Routing */
+
+        // Set the product page as the default page
+        $urlRouterProvider.otherwise('/product.html');
+
+        // Define the states/routes
+        $stateProvider
+            .state('product', {
+                url: '/product.html',
+                templateUrl: 'app/product/product.html',
+                controller: 'kpnAssignment.productController',
+                controllerAs: 'product'
+            });
+    };
+
+    angular
+        .module('kpnAssignment')
+        .config(Config);
 
 })();

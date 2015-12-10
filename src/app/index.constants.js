@@ -1,10 +1,12 @@
 /* global malarkey:false, moment:false */
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('kpnAssignment')
-    .constant('malarkey', malarkey)
-    .constant('moment', moment);
+    // The application constants
+    // Note : The global variables are defined as constants to facilitate unit testing
+    angular
+        .module('kpnAssignment')
+        .constant('malarkey', malarkey)
+        .constant('moment', moment);
 
 })();
