@@ -20,7 +20,7 @@
         /* Routing */
 
         // Set the product page as the default page
-        $urlRouterProvider.otherwise('/product.html');
+        $urlRouterProvider.otherwise('/home.html');
 
         // Define the states/routes
         $stateProvider
