@@ -17,7 +17,7 @@
             restrict : 'E',
             templateUrl : 'app/shared/header/header.html',
             controller : 'kpnAssignment.headerController',
-            controllerAs : 'header'
+            controllerAs : 'vm'
         };
     };
 

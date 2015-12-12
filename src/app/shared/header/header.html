@@ -10,7 +10,7 @@
         </div>
         <div class="collapse navbar-collapse" id="navBar">
             <ul class="nav navbar-nav">
-                <li ng-repeat="state in header.states"  ng-class="header.$state.current.name == state.name ? 'active' : ''">
+                <li ng-repeat="state in vm.states"  ng-class="vm.$state.current.name == state.name ? 'active' : ''">
                     <a ui-sref="{{state.name}}" ng-bind="state.data.prettyName ? state.data.prettyName : state.name"></a>
                 </li>
             </ul>
