@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Yeoman",
+        "url": "http://yeoman.io/"
+    },
+    {
+        "name": "AngularJS",
+        "url": "https://angularjs.org",
+        "subTechnologies" : [
+            {
+                "name" : "UI Router",
+                "url" : "https://angular-ui.github.io/ui-router/site/#/api/ui.router"
+            }
+        ]
+    },
+    {
+        "name": "Lodash",
+        "url": "https://lodash.com"
+    },
+    {
+        "name": "Bootstrap",
+        "url": "http://getbootstrap.com/"
+    },
+    {
+        "name": "Sass",
+        "url": "http://sass-lang.com/"
+    },
+    {
+        "name" : "Gulp",
+        "url" : "http://gulpjs.com/"
+    }
+]

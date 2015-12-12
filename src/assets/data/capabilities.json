@@ -1,0 +1,14 @@
+[
+    {
+        "description" : "Pick a product",
+        "url" : ""
+    },
+    {
+        "description" : "Check out a random product",
+        "url" : ""
+    },
+    {
+        "description" : "Check out the code",
+        "url" : "https://github.com/thefabulousdev/kpn-assignment"
+    }
+]

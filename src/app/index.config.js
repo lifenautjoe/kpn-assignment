@@ -20,10 +20,19 @@
         /* Routing */
 
         // Set the product page as the default page
-        $urlRouterProvider.otherwise('/product.html');
+        $urlRouterProvider.otherwise('/home.html');
 
         // Define the states/routes
         $stateProvider
+            .state('home', {
+                url: '/home.html',
+                templateUrl: 'app/home/home.html',
+                controller: 'kpnAssignment.homeController',
+                controllerAs: 'vm',
+                data : {
+                    prettyName : 'Home'
+                }
+            })
             .state('product', {
                 url: '/product.html',
                 templateUrl: 'app/product/product.html',
