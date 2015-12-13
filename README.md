@@ -1,5 +1,7 @@
 # KPN Assignment
 
+[![Code Climate](https://codeclimate.com/github/thefabulousdev/kpn-assignment/badges/gpa.svg)](https://codeclimate.com/github/thefabulousdev/kpn-assignment)
+
 Skills assessment assignment for KPN
 
 ### Requirements
