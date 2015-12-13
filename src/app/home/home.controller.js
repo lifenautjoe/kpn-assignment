@@ -1,3 +1,8 @@
+/**
+ * @author joel
+ * 11-12-15
+ */
+
 (function () {
     'use strict';
 
