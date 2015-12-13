@@ -3,8 +3,7 @@ node_js:
   - "stable"
 # whitelist
 before_script:
-  - npm install -g gulp
-  - npm install
+  - npm install gulp bower -g
   - bower install
 script: gulp test
 branches:
