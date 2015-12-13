@@ -25,10 +25,8 @@
                 "price" : 629,
                 "discount" : 220
             },
-            "subscription" : {
-                "price" : 44,
-                "discount" : 5
-            }
+            "price" : 44,
+            "discount" : 5
         },
         {
             "id" : 2,
@@ -39,10 +37,8 @@
                 "price" : 629,
                 "discount" : 390
             },
-            "subscription" : {
-                "price" : 47.50,
-                "discount" : 5
-            }
+            "price" : 47.50,
+            "discount" : 5
         },
         {
             "id" : 3,
@@ -53,10 +49,8 @@
                 "price" : 629,
                 "discount" : 480
             },
-            "subscription" : {
-                "price" : 52.50,
-                "discount" : 5
-            }
+            "price" : 52.50,
+            "discount" : 5
         },
         {
             "id" : 4,
@@ -67,10 +61,8 @@
                 "price" : 629,
                 "discount" : 480
             },
-            "subscription" : {
-                "price" : 59,
-                "discount" : 10
-            }
+            "price" : 59,
+            "discount" : 10
         },
         {
             "id" : 5,
@@ -81,10 +73,8 @@
                 "price" : 629,
                 "discount" : 600
             },
-            "subscription" : {
-                "price" : 74,
-                "discount" : 10
-            }
+            "price" : 74,
+            "discount" : 10
         },
         {
             "id" : 6,
@@ -95,10 +85,8 @@
                 "price" : 629,
                 "discount" : 530
             },
-            "subscription" : {
-                "price" : 64,
-                "discount" : 10
-            }
+            "price" : 64,
+            "discount" : 10
         }
     ]
 }
