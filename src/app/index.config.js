@@ -33,6 +33,15 @@
                     prettyName : 'Home'
                 }
             })
+            .state('products', {
+                url: '/products.html',
+                templateUrl: 'app/products/products.html',
+                controller: 'kpnAssignment.productsController',
+                controllerAs: 'vm',
+                data : {
+                    prettyName : 'Products'
+                }
+            })
             .state('product', {
                 url: '/product/{productId}.html',
                 templateUrl: 'app/product/product.html',
