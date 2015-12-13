@@ -3,14 +3,17 @@
     "name" : "Apple iPhone 6s 64GB Zilver",
     "images" : [
         {
+            "id" : 1,
             "alt" : "Front",
             "url" : "assets/images/products/apple-iphone-6-64gb-silver-front-409.png"
         },
         {
+            "id" : 2,
             "alt" : "Back",
             "url" : "assets/images/products/apple-iphone-6-64gb-silver-back-409.png"
         },
         {
+            "id" : 3,
             "alt" : "Side",
             "url" : "assets/images/products/apple-iphone-6-64gb-silver-side-409.png"
         }
