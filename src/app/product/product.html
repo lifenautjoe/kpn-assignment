@@ -150,7 +150,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 product-extras__text product-extras__text--title">
-                                    <span>One off</span>
+                                    <span>One-off</span>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="row">
@@ -161,6 +161,11 @@
                                     <span
                                         ng-bind="'€ ' + (vm.selectedSubscription.device.price - vm.selectedSubscription.device.discount).toFixed(2).replace('.',',')">
                             </span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 product-extras__text">
+                                            <span ng-bind="'Original € ' + vm.selectedSubscription.device.price.toFixed(2).replace('.',',')"></span>
                                         </div>
                                     </div>
                                 </div>
