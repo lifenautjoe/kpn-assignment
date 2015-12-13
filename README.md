@@ -1,6 +1,6 @@
 # KPN Assignment
 
-[![Code Climate](https://codeclimate.com/github/thefabulousdev/kpn-assignment/badges/gpa.svg)](https://codeclimate.com/github/thefabulousdev/kpn-assignment)
+[![Build Status](https://travis-ci.org/thefabulousdev/kpn-assignment.svg?branch=master)](https://travis-ci.org/thefabulousdev/kpn-assignment)[![Code Climate](https://codeclimate.com/github/thefabulousdev/kpn-assignment/badges/gpa.svg)](https://codeclimate.com/github/thefabulousdev/kpn-assignment)
 
 Skills assessment assignment for KPN
 
