@@ -1,14 +1,16 @@
 # KPN Assignment
 
+[![Build Status](https://travis-ci.org/thefabulousdev/kpn-assignment.svg?branch=master)](https://travis-ci.org/thefabulousdev/kpn-assignment)[![Code Climate](https://codeclimate.com/github/thefabulousdev/kpn-assignment/badges/gpa.svg)](https://codeclimate.com/github/thefabulousdev/kpn-assignment)
+
 Skills assessment assignment for KPN
 
 ### Requirements
 
 #### [Install node](https://nodejs.org/en/download/)
 
-#### Install gulp
+#### Install gulp and bower
 ``` sh
-npm install gulp -g
+npm install gulp bower -g
 ```
 
 #### Install dependencies
