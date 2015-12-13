@@ -8,9 +8,9 @@ Skills assessment assignment for KPN
 
 #### [Install node](https://nodejs.org/en/download/)
 
-#### Install gulp
+#### Install gulp and bower
 ``` sh
-npm install gulp -g
+npm install gulp bower -g
 ```
 
 #### Install dependencies
