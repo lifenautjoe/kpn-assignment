@@ -7,7 +7,8 @@
             'ngTouch',
             'ngSanitize',
             'ui.router',
-            'smart-table'
+            'smart-table',
+            'prettyBytes'
         ]);
 
 })();
