@@ -1,0 +1,19 @@
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navBar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">KPN</a>
+        </div>
+        <div class="collapse navbar-collapse" id="navBar">
+            <ul class="nav navbar-nav">
+                <li ng-repeat="state in vm.states"  ng-class="vm.$state.current.name == state.name ? 'active' : ''">
+                    <a ui-sref="{{state.name}}" ng-bind="state.data.prettyName ? state.data.prettyName : state.name"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

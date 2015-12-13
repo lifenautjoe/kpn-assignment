@@ -1,14 +1,18 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('kpnAssignment')
-    .run(runBlock);
+    /**
+     * The application run method
+     *
+     * @constructor
+     * @ngInject
+     */
+    var Run = function ($log) {
+        $log.debug('Running application');
+    };
 
-  /** @ngInject */
-  function runBlock($log) {
-
-    $log.debug('runBlock end');
-  }
+    angular
+        .module('kpnAssignment')
+        .run(Run);
 
 })();

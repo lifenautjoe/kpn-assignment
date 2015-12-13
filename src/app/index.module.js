@@ -1,7 +1,14 @@
-(function() {
-  'use strict';
+(function () {
+    'use strict';
 
-  angular
-    .module('kpnAssignment', ['ngTouch', 'ngSanitize', 'ui.router', 'toastr']);
+    // The application module definition
+    angular
+        .module('kpnAssignment', [
+            'ngTouch',
+            'ngSanitize',
+            'ui.router',
+            'smart-table',
+            'prettyBytes'
+        ]);
 
 })();

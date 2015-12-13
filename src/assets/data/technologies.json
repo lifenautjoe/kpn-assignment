@@ -1,0 +1,36 @@
+[
+    {
+        "name": "Yeoman",
+        "url": "http://yeoman.io/"
+    },
+    {
+        "name": "AngularJS",
+        "url": "https://angularjs.org",
+        "subTechnologies" : [
+            {
+                "name" : "UI Router",
+                "url" : "https://angular-ui.github.io/ui-router/site/#/api/ui.router"
+            },
+            {
+                "name" : "Smart Table",
+                "url" : "https://github.com/lorenzofox3/Smart-Table"
+            },
+            {
+                "name" : "Pretty Bytes",
+                "url" : "https://github.com/neoziro/angular-pretty-bytes"
+            }
+        ]
+    },
+    {
+        "name": "Bootstrap",
+        "url": "http://getbootstrap.com/"
+    },
+    {
+        "name": "Sass",
+        "url": "http://sass-lang.com/"
+    },
+    {
+        "name" : "Gulp",
+        "url" : "http://gulpjs.com/"
+    }
+]

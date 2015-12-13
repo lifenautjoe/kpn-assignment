@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row page-header">
+        <div class="col-xs-12">
+            <h1>
+                Welcome
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>
+                What is this?
+            </h3>
+            <p>
+                A skills assessment assignment for KPN
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>
+                What technologies were used?
+            </h3>
+            <ul>
+                <li ng-repeat="technology in vm.technologies">
+                    <a ng-href="{{ technology.url }}" ng-bind="technology.name"></a>
+                    <ul>
+                        <li ng-repeat="subTechnology in technology.subTechnologies">
+                            <a href="{{ subTechnology.url }}" ng-bind="subTechnology.name"></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>
+                What can I do?
+            </h3>
+            <ul>
+                <li ng-repeat="capability in vm.capabilities">
+                    <a ng-href="{{ capability.url }}" ng-bind="capability.description"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>
+                Author
+            </h3>
+            <a href="https://github.com/thefabulousdev">
+                Joel Hernandez
+            </a>
+        </div>
+    </div>
+</div>

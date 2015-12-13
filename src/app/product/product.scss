@@ -1,0 +1,177 @@
+
+/*
+* Product subscription
+*/
+
+.product-subscription {
+    cursor: pointer;
+}
+
+.product-subscription--selected {
+    background-color: #F3F3F3;
+}
+
+.product-subscription__value {
+    padding: 20px 20px !important;
+}
+
+.product-subscription__value--numeric {
+    text-align: right;
+}
+
+.product-subscription__name {
+    font-weight: bold;
+}
+
+// All product subscription prices will have this class
+.product-subscription__price {
+
+}
+
+.product-subscription__price--previously {
+    text-decoration: line-through;
+}
+
+.product-subscription__price--finally {
+    color: #FFA032;
+}
+
+.product-subscription__price--device {
+    font-weight: bold;
+}
+
+/*
+* Product details
+*/
+
+.product-details {
+    padding: 20px;
+}
+
+/*
+* Product images
+*/
+
+.product-images {
+    padding: 10px;
+    background-color: #CCCCCC;
+}
+
+.product-image {
+    display: block;
+    max-height: 400px;
+    width: auto;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+/*
+* Product thumbnails
+*/
+
+.product-thumbnails {
+    padding: 10px;
+}
+
+.product-thumbnail {
+    cursor: pointer;
+    padding-bottom: 10px;
+}
+
+.product-thumbnail__img-container {
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.product-thumbnail__img-container--selected {
+    -webkit-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.18);
+    -moz-box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.18);
+    box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.18);
+}
+
+.product-thumbnail__img {
+    height: 42px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/*
+* Product price
+*/
+
+.product-price {
+    background-color: #1A99FF;
+    position: absolute;
+    bottom: 40px;
+    right:0;
+    padding :10px 20px;
+}
+
+.product-price__title {
+    color : white;
+    text-align: right;
+}
+
+.product-price__value {
+    font-weight: bold;
+    color : white;
+    font-size: 40 /16 * 1em;
+}
+
+/*
+* Product totals
+*/
+
+.product-totals {
+    background-color: #E3E3E3;
+    padding: 10px;
+}
+
+.product-totals__text {
+    margin-bottom: 20px;
+}
+
+.product-totals__text--primary {
+    font-weight: bold;
+}
+
+.product-totals__text--numeric {
+    text-align: right;
+}
+
+/*
+* Product extras
+*/
+
+.product-extras {
+    background-color: #F3F3F3;
+    padding:10px;
+}
+
+.product-extras__text {
+    margin-bottom: 10px;
+}
+
+.product-extras__text--primary{
+    font-weight: bold;
+}
+
+.product-extras__text--title{
+    margin: 20px 0;
+    font-size:21/ 16* 1em;
+}
+
+.product-extras__text--finally {
+    color: #FFA032;
+}
+
+.product-extras__text--numeric {
+    text-align: right;
+}
+
+
+
+
+
