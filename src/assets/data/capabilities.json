@@ -1,11 +1,11 @@
 [
     {
-        "description" : "Pick a product",
-        "url" : ""
+        "description" : "See available products",
+        "url" : "/#/products"
     },
     {
-        "description" : "Check out a random product",
-        "url" : ""
+        "description" : "Check out a product",
+        "url" : "/#/products/1"
     },
     {
         "description" : "Check out the code",
