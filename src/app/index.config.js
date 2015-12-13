@@ -34,7 +34,7 @@
                 }
             })
             .state('product', {
-                url: '/product.html',
+                url: '/product/{productId}.html',
                 templateUrl: 'app/product/product.html',
                 controller: 'kpnAssignment.productController',
                 controllerAs: 'product',
