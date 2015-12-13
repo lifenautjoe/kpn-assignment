@@ -22,7 +22,7 @@
             "volume" : "150 mins or sms",
             "data" : 500000000,
             "device" : {
-                "price" : 529,
+                "price" : 600,
                 "discount" : 220
             },
             "price" : 44,
@@ -34,7 +34,7 @@
             "volume" : "150 mins or sms",
             "data" : 1000000000,
             "device" : {
-                "price" : 529,
+                "price" : 600,
                 "discount" : 390
             },
             "price" : 47.50,
@@ -46,7 +46,7 @@
             "volume" : "200 mins or sms",
             "data" : 5000000000,
             "device" : {
-                "price" : 529,
+                "price" : 600,
                 "discount" : 480
             },
             "price" : 52.50,
@@ -58,7 +58,7 @@
             "volume" : "Unlimited",
             "data" : 1000000000,
             "device" : {
-                "price" : 529,
+                "price" : 600,
                 "discount" : 480
             },
             "price" : 59,
@@ -70,7 +70,7 @@
             "volume" : "Unlimited",
             "data" : 10000000000,
             "device" : {
-                "price" : 529,
+                "price" : 600,
                 "discount" : 600
             },
             "price" : 74,
@@ -82,7 +82,7 @@
             "volume" : "Unlimited",
             "data" : 5000000000,
             "device" : {
-                "price" : 529,
+                "price" : 600,
                 "discount" : 530
             },
             "price" : 64,
