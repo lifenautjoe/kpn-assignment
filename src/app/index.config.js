@@ -20,12 +20,12 @@
         /* Routing */
 
         // Set the product page as the default page
-        $urlRouterProvider.otherwise('/home.html');
+        $urlRouterProvider.otherwise('/home');
 
         // Define the states/routes
         $stateProvider
             .state('home', {
-                url: '/home.html',
+                url: '/home',
                 templateUrl: 'app/home/home.html',
                 controller: 'kpnAssignment.homeController',
                 controllerAs: 'vm',
@@ -34,7 +34,7 @@
                 }
             })
             .state('products', {
-                url: '/products.html',
+                url: '/products',
                 templateUrl: 'app/products/products.html',
                 controller: 'kpnAssignment.productsController',
                 controllerAs: 'vm',
@@ -43,7 +43,7 @@
                 }
             })
             .state('product', {
-                url: '/product/{productId}.html',
+                url: '/product/{productId}',
                 templateUrl: 'app/product/product.html',
                 controller: 'kpnAssignment.productController',
                 controllerAs: 'product',
