@@ -39,6 +39,10 @@
             it('should refresh products', function () {
                 expect(vm.products).toEqual(products);
             });
+
+            it('should have productsRefreshInProgress attribute set to false', function () {
+                expect(vm.productsRefreshInProgress).toBe(false);
+            });
         });
 
         describe('refreshProducts()', function () {
@@ -51,6 +55,9 @@
                 refreshedProductsPromise = deferredRefreshedProducts.promise;
                 deferredRefreshedProducts.resolve(refreshedProducts);
                 vm.productsService.get.and.returnValue(refreshedProductsPromise);
+
+                // Spy on the toggler
+                spyOn(vm,'toggleProductsRefreshInProgress').and.callThrough();
             });
 
             it('should refresh the products', function (done) {
@@ -60,7 +67,17 @@
                 });
                 $rootScope.$digest();
             });
+
+            it('should track refresh in progress', function (done) {
+                vm.refreshProducts().then(function () {
+                    expect(vm.toggleProductsRefreshInProgress.calls.count()).toEqual(2);
+                    done();
+                });
+                $rootScope.$digest();
+            });
         });
+
+
 
     });
 })();

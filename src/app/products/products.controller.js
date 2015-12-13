@@ -21,14 +21,33 @@
     };
 
     /**
+     * Whether theres a product refresh in progress
+     * @type {boolean}
+     */
+    ProductsController.prototype.productsRefreshInProgress = false;
+
+    /**
      * Refreshes the application used products
      */
     ProductsController.prototype.refreshProducts = function () {
-        var that = this;
+        if(!this.productsRefreshInProgress){
+            // Toggle
+            this.toggleProductsRefreshInProgress();
 
-        return this.productsService.get().then(function (products) {
-            that.products = products;
-        });
+            var that = this;
+            return this.productsService.get().then(function (products) {
+                that.products = products;
+                // Toggle
+                that.toggleProductsRefreshInProgress();
+            });
+        }
+    };
+
+    /**
+     * Toggles the products refresh in progress flag
+     */
+    ProductsController.prototype.toggleProductsRefreshInProgress = function () {
+        this.productsRefreshInProgress = !this.productsRefreshInProgress;
     };
 
     angular
