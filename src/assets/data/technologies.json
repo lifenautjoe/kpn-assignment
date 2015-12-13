@@ -22,10 +22,6 @@
         ]
     },
     {
-        "name": "Lodash",
-        "url": "https://lodash.com"
-    },
-    {
         "name": "Bootstrap",
         "url": "http://getbootstrap.com/"
     },
