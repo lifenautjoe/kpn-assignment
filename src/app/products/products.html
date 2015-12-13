@@ -1,0 +1,24 @@
+<div class="container">
+    <div class="row page-header">
+        <div class="col-xs-12">
+            <h1>
+                Products
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-6 col-sm-3" ng-repeat="product in vm.products">
+            <div class="row products-item">
+                <a class="col-xs-12 panel panel-default"
+                   ui-sref="product({productId : product.id})" style="padding:0">
+                    <div class="panel-body">
+                        <img class="products-image__img" ng-src="{{product.image.url}}">
+                    </div>
+                    <div class="panel-footer products-name__container">
+                        <span ng-bind="product.name"></span>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
