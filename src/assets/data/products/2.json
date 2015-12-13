@@ -19,9 +19,9 @@
         {
             "name" : "Basis Mobiel",
             "volume" : "150 mins or sms",
-            "data" : 524288000,
+            "data" : 500000000,
             "device" : {
-                "price" : 624,
+                "price" : 629,
                 "discount" : 220
             },
             "subscription" : {
@@ -32,22 +32,22 @@
         {
             "name" : "Vooral Internet Instap",
             "volume" : "150 mins or sms",
-            "data" : 1073741824,
+            "data" : 1000000000,
             "device" : {
-                "price" : 624,
+                "price" : 629,
                 "discount" : 339
             },
             "subscription" : {
-                "price" : 42.50,
+                "price" : 47.50,
                 "discount" : 5
             }
         },
         {
             "name" : "Vooral Internet Standaard",
             "volume" : "200 mins or sms",
-            "data" : 5368709120,
+            "data" : 5000000000,
             "device" : {
-                "price" : 624,
+                "price" : 629,
                 "discount" : 480
             },
             "subscription" : {
@@ -58,9 +58,9 @@
         {
             "name" : "Zorgeloos Instap",
             "volume" : "Unlimited",
-            "data" : 1073741824,
+            "data" : 1000000000,
             "device" : {
-                "price" : 624,
+                "price" : 629,
                 "discount" : 480
             },
             "subscription" : {
@@ -71,9 +71,9 @@
         {
             "name" : "Zorgeloos Premium",
             "volume" : "Unlimited",
-            "data" : 10737418240,
+            "data" : 10000000000,
             "device" : {
-                "price" : 729,
+                "price" : 629,
                 "discount" : 600
             },
             "subscription" : {
@@ -84,9 +84,9 @@
         {
             "name" : "Zorgeloos Standaard",
             "volume" : "Unlimited",
-            "data" : 5368709120,
+            "data" : 5000000000,
             "device" : {
-                "price" : 624,
+                "price" : 629,
                 "discount" : 530
             },
             "subscription" : {
