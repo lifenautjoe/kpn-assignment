@@ -46,7 +46,7 @@
                 url: '/products/{productId}',
                 templateUrl: 'app/product/product.html',
                 controller: 'kpnAssignment.productController',
-                controllerAs: 'product',
+                controllerAs: 'vm',
                 data : {
                     prettyName : 'Product'
                 }
