@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+  - "stable"
+# whitelist
+before_script:
+  - npm install -g gulp
+  - npm install
+  - bower install
+script: gulp test
+branches:
+  only:
+    - master
