@@ -25,7 +25,7 @@
                     <tbody>
                     <tr ng-repeat="subscription in vm.product.subscriptions"
                         ng-click="vm.selectedSubscription = subscription"
-                        ng-class="subscription == vm.selectedSubscription ? 'product-subscription product-subscription--selected' : 'product-subscription'">
+                        ng-class="subscription.id == vm.selectedSubscription.id ? 'product-subscription product-subscription--selected' : 'product-subscription'">
                         <td class="product-subscription__value">
                             <input type="radio"
                                    ng-model="vm.selectedSubscription"
@@ -65,7 +65,7 @@
                             <div class="row product-thumbnails">
                                 <div class="col-xs-12 product-thumbnail" ng-repeat="image in vm.product.images">
                                     <div
-                                        ng-class="image == vm.selectedImage ? 'row product-thumbnail__img-container row product-thumbnail__img-container--selected' : 'row product-thumbnail__img-container'"
+                                        ng-class="image.id == vm.selectedImage.id ? 'row product-thumbnail__img-container row product-thumbnail__img-container--selected' : 'row product-thumbnail__img-container'"
                                         ng-click="vm.selectedImage = image">
                                         <img class="product-thumbnail__img" alt="{{image.alt}}" ng-src="{{image.url}}">
                                     </div>
