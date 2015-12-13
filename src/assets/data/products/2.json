@@ -17,7 +17,7 @@
     ],
     "subscriptions" : [
         {
-            "id" : 7,
+            "id" : 1,
             "name" : "Basis Mobiel",
             "volume" : "150 mins or sms",
             "data" : 500000000,
@@ -31,13 +31,13 @@
             }
         },
         {
-            "id" : 8,
+            "id" : 2,
             "name" : "Vooral Internet Instap",
             "volume" : "150 mins or sms",
             "data" : 1000000000,
             "device" : {
                 "price" : 629,
-                "discount" : 339
+                "discount" : 390
             },
             "subscription" : {
                 "price" : 47.50,
@@ -45,7 +45,7 @@
             }
         },
         {
-            "id" : 9,
+            "id" : 3,
             "name" : "Vooral Internet Standaard",
             "volume" : "200 mins or sms",
             "data" : 5000000000,
@@ -59,7 +59,7 @@
             }
         },
         {
-            "id" : 10,
+            "id" : 4,
             "name" : "Zorgeloos Instap",
             "volume" : "Unlimited",
             "data" : 1000000000,
@@ -73,7 +73,7 @@
             }
         },
         {
-            "id" : 11,
+            "id" : 5,
             "name" : "Zorgeloos Premium",
             "volume" : "Unlimited",
             "data" : 10000000000,
@@ -87,7 +87,7 @@
             }
         },
         {
-            "id" : 12,
+            "id" : 6,
             "name" : "Zorgeloos Standaard",
             "volume" : "Unlimited",
             "data" : 5000000000,
