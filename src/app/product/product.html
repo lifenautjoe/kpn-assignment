@@ -1,4 +1,174 @@
 <div class="container">
-  Product view
-
+    <div class="row">
+        <div class="col-xs-12 col-md-8">
+            <div class="row">
+                <h1 ng-bind="vm.product.name">
+                </h1>
+            </div>
+            <div class="row">
+                <h3>
+                    Select subscription
+                </h3>
+            </div>
+            <div class="row">
+                <table st-table="displayedCollection" st-safe-src="vm.product.subscriptions"
+                       class="table table--borderless">
+                    <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Minutes/sms</th>
+                        <th>Internet</th>
+                        <th>Device price</th>
+                        <th>Costs / month</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="subscription in vm.product.subscriptions"
+                        ng-click="vm.selectedSubscription = subscription"
+                        ng-class="subscription == vm.selectedSubscription ? 'product-subscription product-subscription--selected' : 'product-subscription'">
+                        <td class="product-subscription__value">
+                            <input type="radio"
+                                   ng-model="vm.selectedSubscription"
+                                   ng-value="subscription">
+                            <span class="product-subscription__name" ng-bind="subscription.name"></span>
+                        </td>
+                        <td class="product-subscription__value">
+                            <span ng-bind="subscription.volume"></span>
+                        </td>
+                        <td class="product-subscription__value">
+                            <span ng-bind="(subscription.data | prettyBytes)"></span>
+                        </td>
+                        <td class="product-subscription__value product-subscription__value--numeric">
+                            <span class="product-subscription__price product-subscription__price--device"
+                                  ng-bind="'€ ' + (subscription.device.price - subscription.device.discount).toFixed(2).replace('.',',')"></span>
+                        </td>
+                        <td class="product-subscription__value product-subscription__value--numeric">
+                            <span class="product-subscription__price product-subscription__price--previously"
+                                  ng-bind="'€ ' + (subscription.price).toFixed(2).replace('.',',')"></span>
+                            <span class="product-subscription__price product-subscription__price--finally"
+                                  ng-bind="'€ ' + (subscription.price - subscription.discount).toFixed(2).replace('.',',')"></span>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="col-xs-12 col-md-4">
+            <div class="row product-details">
+                <div class="col-sm-12">
+                    <div class="row product-images">
+                        <div class="col-xs-9">
+                            <img class="product-image" ng-src="{{vm.selectedImage.url}}"
+                                 alt="{{vm.selectedImage.alt}}">
+                        </div>
+                        <div class="col-xs-3">
+                            <div class="row product-thumbnails">
+                                <div class="col-xs-12 product-thumbnail" ng-repeat="image in vm.product.images">
+                                    <div
+                                        ng-class="image == vm.selectedImage ? 'row product-thumbnail__img-container row product-thumbnail__img-container--selected' : 'row product-thumbnail__img-container'"
+                                        ng-click="vm.selectedImage = image">
+                                        <img class="product-thumbnail__img" alt="{{image.alt}}" ng-src="{{image.url}}">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <div class="product-price__title">
+                            Phone
+                        </div>
+                        <div class="product-price__container">
+                            <span class="product-price__value"
+                                  ng-bind="(vm.selectedSubscription.device.price - vm.selectedSubscription.device.discount) + ',-'"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="row product-totals">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div class="col-xs-6 product-totals__text product-totals__text--primary">
+                                    <span>Total per month</span>
+                                </div>
+                                <div
+                                    class="col-xs-6 product-totals__text product-totals__text--primary product-totals__text--numeric">
+                            <span
+                                ng-bind="'€ ' + (vm.selectedSubscription.price - vm.selectedSubscription.discount).toFixed(2).replace('.',',')">
+                            </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-6  product-totals__text">
+                                    <span>Total one off</span>
+                                </div>
+                                <div
+                                    class="col-xs-6 product-totals__text product-totals__text--primary product-totals__text--numeric">
+                            <span
+                                ng-bind="'€ ' + (vm.selectedSubscription.device.price - vm.selectedSubscription.device.discount).toFixed(2).replace('.',',')">
+                            </span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <button class="btn btn-primary btn-block btn-lg">
+                                    Bestellen
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12">
+                    <div class="row product-extras">
+                        <div class="col-xs-12">
+                            <div class="row">
+                                <div
+                                    class="col-xs-12 product-extras__text product-extras__text--title">
+                                    <span>Monthly costs</span>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-6 product-extras__text product-extras__text--primary">
+                                            <span ng-bind="vm.selectedSubscription.name"></span>
+                                        </div>
+                                        <div
+                                            class="col-xs-6 product-extras__text product-extras__text--primary product-extras__text--numeric">
+                                    <span
+                                        ng-bind="'€ ' + vm.selectedSubscription.price.toFixed(2).replace('.',',')"></span>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-6 product-extras__text">
+                                            <span>
+                                                Discount as long as your subscription runs
+                                            </span>
+                                        </div>
+                                        <div class="col-xs-6 product-extras__text product-extras__text--primary product-extras__text--numeric product-extras__text--finally">
+                                    <span
+                                        ng-bind="'-€ ' + vm.selectedSubscription.discount.toFixed(2).replace('.',',')"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-12 product-extras__text product-extras__text--title">
+                                    <span>One off</span>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="row">
+                                        <div class="col-xs-6 product-extras__text product-extras__text--primary">
+                                            <span ng-bind="vm.product.name"></span>
+                                        </div>
+                                        <div class="col-xs-6 product-extras__text product-extras__text--primary product-extras__text--numeric product-extras__text--finally">
+                                    <span
+                                        ng-bind="'€ ' + (vm.selectedSubscription.device.price - vm.selectedSubscription.device.discount).toFixed(2).replace('.',',')">
+                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
