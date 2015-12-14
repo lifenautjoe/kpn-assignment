@@ -22,5 +22,21 @@
             "alt" : "Front",
             "url" : "assets/images/products/apple-iphone-6-64gb-silver-front-409.png"
         }
+    },
+    {
+        "id" : 4,
+        "name" : "Samsung Galaxy S6 Edge",
+        "image" :  {
+            "alt" : "Front",
+            "url" : "assets/images/products/samsung-galaxy-s6-edge-plus-32gb-black-front-562.png"
+        }
+    },
+    {
+        "id" : 5,
+        "name" : "Nexus 5X 32GB Carbon black",
+        "image" :  {
+            "alt" : "Front",
+            "url" : "assets/images/products/nexus-5x-32gb-carbon-black-front-599.png"
+        }
     }
 ]
