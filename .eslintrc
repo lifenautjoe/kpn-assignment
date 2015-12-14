@@ -13,6 +13,7 @@
         "inject": true
     },
     "rules": {
+        "angular/controller-as-vm": [0, "vm"],
         "indent": [
             2,
             4,
