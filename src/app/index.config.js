@@ -48,7 +48,7 @@
                 controller: 'kpnAssignment.productController',
                 controllerAs: 'vm',
                 data : {
-                    prettyName : 'Product'
+                    hidden : true
                 }
             });
     };

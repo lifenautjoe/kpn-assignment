@@ -7,6 +7,7 @@
             'ngTouch',
             'ngSanitize',
             'ui.router',
+            'ngLodash',
             'smart-table',
             'prettyBytes'
         ]);

@@ -18,6 +18,10 @@
             {
                 "name" : "Pretty Bytes",
                 "url" : "https://github.com/neoziro/angular-pretty-bytes"
+            },
+            {
+                "name" : "ng-lodash",
+                "url" : "https://github.com/rockabox/ng-lodash"
             }
         ]
     },
